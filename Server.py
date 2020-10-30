@@ -1,8 +1,8 @@
 import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind((socket.gethostbyname(socket.gethostname()), 1028))
-print(f'{(socket.gethostbyname(socket.gethostname()))} bind...')
+sock.bind(('https://cnn-server.herokuapp.com/', 1028))
+print(f'https://cnn-server.herokuapp.com/ -> bind...')
 sock.listen(5)
 
 print('Waiting for client...')
